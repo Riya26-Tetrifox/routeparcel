@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/routeparcel/static/css/main.e4ff40a4.css",
+    "main.js": "/routeparcel/static/js/main.dfcdfe16.js",
+    "static/js/453.20359781.chunk.js": "/routeparcel/static/js/453.20359781.chunk.js",
+    "index.html": "/routeparcel/index.html",
+    "main.e4ff40a4.css.map": "/routeparcel/static/css/main.e4ff40a4.css.map",
+    "main.dfcdfe16.js.map": "/routeparcel/static/js/main.dfcdfe16.js.map",
+    "453.20359781.chunk.js.map": "/routeparcel/static/js/453.20359781.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e4ff40a4.css",
+    "static/js/main.dfcdfe16.js"
+  ]
+}
