@@ -1,0 +1,13 @@
+
+.btn-purple {
+  background-color: #8e44ad;
+  color: white;
+}
+
+.btn-purple:hover {
+  background-color: #732d91;
+}
+.hello {
+    --bs-bg-opacity: 1;
+    background-color: rgb(53 81 109) !important;
+}
