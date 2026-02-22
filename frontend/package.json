@@ -1,5 +1,4 @@
 {
-  "homepage": "https://riya26-tetrifox.github.io/routeparcel",
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
@@ -41,3 +40,5 @@
     ]
   }
 }
+
+ 

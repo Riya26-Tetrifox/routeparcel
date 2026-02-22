@@ -16,4 +16,4 @@ class Customer(Base):
     Approval_status=Column(String)
 
 
-
+#  // "homepage": "https://riya26-tetrifox.github.io/routeparcel"
