@@ -1,26 +1,45 @@
-# name: Container Security Scan
+name: CI/CD Pipeline
 
-# on:
-#   push:
-#     branches:
-#       - main
+on:
+  push:
+    branches:
+      - main
 
-# jobs:
-#   trivy-scan:
-#     runs-on: ubuntu-latest
+jobs:
+  build-scan-push:
+    runs-on: ubuntu-latest
 
-#     steps:
-    
-#       - name: Checkout repository
-#         uses: actions/checkout@v3
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
 
-#       - name: Build Docker image
-#         run: docker build -t myimg .
+      - name: Set up Docker Build
+        uses: docker/setup-buildx-action@v3
 
-#       - name: Run Trivy vulnerability scanner
-#         uses: aquasecurity/trivy-action@master
-#         with:
-#           image-ref: 'myimg'
-#           format: 'table'
-#           severity: 'HIGH,CRITICAL'
-#           exit-code: '1'
+      - name: Build Docker Image
+        run: |
+          docker build -t myimg:latest .
+
+      - name: Scan Image with Trivy
+        uses: aquasecurity/trivy-action@0.20.0
+        with:
+          image-ref: myimg:latest
+          format: table
+          exit-code: 1
+          ignore-unfixed: true
+          severity: CRITICAL,HIGH
+
+      - name: Login to Azure
+        uses: azure/docker-login@v2
+        with:
+          login-server: riyavulneraility.azurecr.io
+          username: ${{ secrets.ACR_USERNAME }}
+          password: ${{ secrets.ACR_PASSWORD }}
+
+      - name: Tag Image
+        run: |
+          docker tag myimg:latest riyavulneraility.azurecr.io/myimg:latest
+
+      - name: Push Image
+        run: |
+          docker push riyavulneraility.azurecr.io/myimg:latest
