@@ -4,11 +4,509 @@ Report Summary
 ┌──────────────────────────────────────────────────────────────────────────────────┬────────────┬─────────────────┬─────────┐
 │                                      Target                                      │    Type    │ Vulnerabilities │ Secrets │
 ├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
-│ myimg (alpine 3.23.3)                                                            │   alpine   │        0        │    -    │
+│ riyavulneraility.azurecr.io/myimg:latest (alpine 3.23.3)                         │   alpine   │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.accepts-ZoofycaY/node_modules/negotiator/package.json │  node-pkg  │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.acorn-globals-roANYl7e/node_modules/acorn/package.js- │  node-pkg  │        0        │    -    │
+│ on                                                                               │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.ajv-formats-JwXnLdhX/node_modules/ajv/package.json    │  node-pkg  │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.ajv-formats-JwXnLdhX/node_modules/json-schema-traver- │  node-pkg  │        0        │    -    │
+│ se/package.json                                                                  │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.ansi-escapes-IKzjzZtJ/node_modules/type-fest/package- │  node-pkg  │        0        │    -    │
+│ .json                                                                            │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.babel-loader-ryya7rZT/node_modules/schema-utils/pack- │  node-pkg  │        0        │    -    │
+│ age.json                                                                         │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.babel-plugin-polyfill-corejs2-UGU5FqMn/node_modules/- │  node-pkg  │        0        │    -    │
+│ semver/package.json                                                              │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.babel-preset-react-app-JMgkWWq1/node_modules/@babel/- │  node-pkg  │        0        │    -    │
+│ plugin-proposal-private-property-in-object/package.json                          │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.body-parser-Ppm7zkWU/node_modules/debug/package.json  │  node-pkg  │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.body-parser-Ppm7zkWU/node_modules/iconv-lite/package- │  node-pkg  │        0        │    -    │
+│ .json                                                                            │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.body-parser-Ppm7zkWU/node_modules/ms/package.json     │  node-pkg  │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.chalk-QIF7V34c/node_modules/ansi-styles/package.json  │  node-pkg  │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.chokidar-did3fMVh/node_modules/glob-parent/package.j- │  node-pkg  │        0        │    -    │
+│ son                                                                              │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.clean-css-U7cShul6/node_modules/source-map/package.j- │  node-pkg  │        0        │    -    │
+│ son                                                                              │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.coa-ibyxrbEx/node_modules/ansi-styles/package.json    │  node-pkg  │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.coa-ibyxrbEx/node_modules/chalk/package.json          │  node-pkg  │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.coa-ibyxrbEx/node_modules/color-convert/package.json  │  node-pkg  │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.coa-ibyxrbEx/node_modules/color-name/package.json     │  node-pkg  │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.coa-ibyxrbEx/node_modules/escape-string-regexp/packa- │  node-pkg  │        0        │    -    │
+│ ge.json                                                                          │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.coa-ibyxrbEx/node_modules/has-flag/package.json       │  node-pkg  │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.coa-ibyxrbEx/node_modules/supports-color/package.json │  node-pkg  │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.compression-fBAjjf7C/node_modules/debug/package.json  │  node-pkg  │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.compression-fBAjjf7C/node_modules/ms/package.json     │  node-pkg  │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.css-minimizer-webpack-plugin-JlYBdDez/node_modules/s- │  node-pkg  │        0        │    -    │
+│ ource-map/package.json                                                           │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.css-tree-vedFrqDT/node_modules/source-map/package.js- │  node-pkg  │        0        │    -    │
+│ on                                                                               │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.csso-CUIHXtph/node_modules/css-tree/package.json      │  node-pkg  │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.csso-CUIHXtph/node_modules/mdn-data/package.json      │  node-pkg  │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.csso-CUIHXtph/node_modules/source-map/package.json    │  node-pkg  │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.cssstyle-VTALZVXS/node_modules/cssom/package.json     │  node-pkg  │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.detect-port-alt-y9uTS35E/node_modules/debug/package.- │  node-pkg  │        0        │    -    │
+│ json                                                                             │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.detect-port-alt-y9uTS35E/node_modules/ms/package.json │  node-pkg  │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.domexception-sskz6uDL/node_modules/webidl-conversion- │  node-pkg  │        0        │    -    │
+│ s/package.json                                                                   │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.escodegen-LQGsvVv3/node_modules/source-map/package.j- │  node-pkg  │        0        │    -    │
+│ son                                                                              │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.eslint-OMvdoIFG/node_modules/argparse/package.json    │  node-pkg  │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.eslint-OMvdoIFG/node_modules/find-up/package.json     │  node-pkg  │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.eslint-OMvdoIFG/node_modules/js-yaml/package.json     │  node-pkg  │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.eslint-OMvdoIFG/node_modules/locate-path/package.json │  node-pkg  │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.eslint-OMvdoIFG/node_modules/p-limit/package.json     │  node-pkg  │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.eslint-OMvdoIFG/node_modules/p-locate/package.json    │  node-pkg  │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.eslint-import-resolver-node-MSrCqAwu/node_modules/de- │  node-pkg  │        0        │    -    │
+│ bug/package.json                                                                 │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.eslint-module-utils-KEGTS2BX/node_modules/debug/pack- │  node-pkg  │        0        │    -    │
+│ age.json                                                                         │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.eslint-plugin-import-6mnLovno/node_modules/debug/pac- │  node-pkg  │        0        │    -    │
+│ kage.json                                                                        │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.eslint-plugin-import-6mnLovno/node_modules/doctrine/- │  node-pkg  │        0        │    -    │
+│ package.json                                                                     │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.eslint-plugin-import-6mnLovno/node_modules/semver/pa- │  node-pkg  │        0        │    -    │
+│ ckage.json                                                                       │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.eslint-plugin-jsx-a11y-5grPZXqY/node_modules/aria-qu- │  node-pkg  │        0        │    -    │
+│ ery/package.json                                                                 │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.eslint-plugin-react-9yvA6iEt/node_modules/doctrine/p- │  node-pkg  │        0        │    -    │
+│ ackage.json                                                                      │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.eslint-plugin-react-9yvA6iEt/node_modules/resolve/pa- │  node-pkg  │        0        │    -    │
+│ ckage.json                                                                       │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.eslint-plugin-react-9yvA6iEt/node_modules/resolve/te- │  node-pkg  │        0        │    -    │
+│ st/resolver/multirepo/package.json                                               │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.eslint-plugin-react-9yvA6iEt/node_modules/resolve/te- │  node-pkg  │        0        │    -    │
+│ st/resolver/multirepo/packages/package-a/package.json                            │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.eslint-plugin-react-9yvA6iEt/node_modules/resolve/te- │  node-pkg  │        0        │    -    │
+│ st/resolver/multirepo/packages/package-b/package.json                            │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.eslint-plugin-react-9yvA6iEt/node_modules/resolve/te- │  node-pkg  │        0        │    -    │
+│ st/resolver/nested_symlinks/mylib/package.json                                   │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.eslint-plugin-react-9yvA6iEt/node_modules/semver/pac- │  node-pkg  │        0        │    -    │
+│ kage.json                                                                        │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.eslint-webpack-plugin-a0t1tz7r/node_modules/jest-wor- │  node-pkg  │        0        │    -    │
+│ ker/package.json                                                                 │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.eslint-webpack-plugin-a0t1tz7r/node_modules/supports- │  node-pkg  │        0        │    -    │
+│ -color/package.json                                                              │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.express-dWNHkJQV/node_modules/debug/package.json      │  node-pkg  │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.express-dWNHkJQV/node_modules/ms/package.json         │  node-pkg  │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.fast-glob-RKzGwhKg/node_modules/glob-parent/package.- │  node-pkg  │        0        │    -    │
+│ json                                                                             │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.file-loader-MojEKUol/node_modules/schema-utils/packa- │  node-pkg  │        0        │    -    │
+│ ge.json                                                                          │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.filelist-WqcJ2JXa/node_modules/brace-expansion/packa- │  node-pkg  │        0        │    -    │
+│ ge.json                                                                          │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.filelist-WqcJ2JXa/node_modules/minimatch/package.json │  node-pkg  │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.finalhandler-vNXT3nPC/node_modules/debug/package.json │  node-pkg  │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.finalhandler-vNXT3nPC/node_modules/ms/package.json    │  node-pkg  │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.fork-ts-checker-webpack-plugin-MzNy9dXN/node_modules- │  node-pkg  │        0        │    -    │
+│ /cosmiconfig/package.json                                                        │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.fork-ts-checker-webpack-plugin-MzNy9dXN/node_modules- │  node-pkg  │        0        │    -    │
+│ /fs-extra/package.json                                                           │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.fork-ts-checker-webpack-plugin-MzNy9dXN/node_modules- │  node-pkg  │        0        │    -    │
+│ /schema-utils/package.json                                                       │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.fork-ts-checker-webpack-plugin-MzNy9dXN/node_modules- │  node-pkg  │        0        │    -    │
+│ /tapable/package.json                                                            │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.global-prefix-1LhsLBDA/node_modules/which/package.js- │  node-pkg  │        0        │    -    │
+│ on                                                                               │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.hpack.js-3oqnttdF/node_modules/isarray/package.json   │  node-pkg  │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.hpack.js-3oqnttdF/node_modules/readable-stream/packa- │  node-pkg  │        0        │    -    │
+│ ge.json                                                                          │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.hpack.js-3oqnttdF/node_modules/safe-buffer/package.j- │  node-pkg  │        0        │    -    │
+│ son                                                                              │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.hpack.js-3oqnttdF/node_modules/string_decoder/packag- │  node-pkg  │        0        │    -    │
+│ e.json                                                                           │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.import-fresh-07iUTbKo/node_modules/resolve-from/pack- │  node-pkg  │        0        │    -    │
+│ age.json                                                                         │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.istanbul-lib-instrument-5voWMT21/node_modules/semver- │  node-pkg  │        0        │    -    │
+│ /package.json                                                                    │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.istanbul-lib-report-c82K7zwt/node_modules/make-dir/p- │  node-pkg  │        0        │    -    │
+│ ackage.json                                                                      │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.istanbul-lib-source-maps-MFPZsyuq/node_modules/sourc- │  node-pkg  │        0        │    -    │
+│ e-map/package.json                                                               │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.jest-watch-typeahead-9Bwd2p1a/node_modules/@jest/con- │  node-pkg  │        0        │    -    │
+│ sole/node_modules/slash/package.json                                             │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.jest-watch-typeahead-9Bwd2p1a/node_modules/@jest/con- │  node-pkg  │        0        │    -    │
+│ sole/package.json                                                                │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.jest-watch-typeahead-9Bwd2p1a/node_modules/@jest/tes- │  node-pkg  │        0        │    -    │
+│ t-result/package.json                                                            │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.jest-watch-typeahead-9Bwd2p1a/node_modules/@jest/typ- │  node-pkg  │        0        │    -    │
+│ es/package.json                                                                  │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.jest-watch-typeahead-9Bwd2p1a/node_modules/@types/ya- │  node-pkg  │        0        │    -    │
+│ rgs/package.json                                                                 │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.jest-watch-typeahead-9Bwd2p1a/node_modules/emittery/- │  node-pkg  │        0        │    -    │
+│ package.json                                                                     │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.jest-watch-typeahead-9Bwd2p1a/node_modules/jest-mess- │  node-pkg  │        0        │    -    │
+│ age-util/node_modules/slash/package.json                                         │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.jest-watch-typeahead-9Bwd2p1a/node_modules/jest-mess- │  node-pkg  │        0        │    -    │
+│ age-util/package.json                                                            │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.jest-watch-typeahead-9Bwd2p1a/node_modules/jest-rege- │  node-pkg  │        0        │    -    │
+│ x-util/package.json                                                              │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.jest-watch-typeahead-9Bwd2p1a/node_modules/jest-util- │  node-pkg  │        0        │    -    │
+│ /package.json                                                                    │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.jest-watch-typeahead-9Bwd2p1a/node_modules/jest-watc- │  node-pkg  │        0        │    -    │
+│ her/node_modules/string-length/package.json                                      │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.jest-watch-typeahead-9Bwd2p1a/node_modules/jest-watc- │  node-pkg  │        0        │    -    │
+│ her/node_modules/strip-ansi/package.json                                         │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.jest-watch-typeahead-9Bwd2p1a/node_modules/jest-watc- │  node-pkg  │        0        │    -    │
+│ her/package.json                                                                 │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.jest-watch-typeahead-9Bwd2p1a/node_modules/pretty-fo- │  node-pkg  │        0        │    -    │
+│ rmat/package.json                                                                │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.jest-watch-typeahead-9Bwd2p1a/node_modules/react-is/- │  node-pkg  │        0        │    -    │
+│ package.json                                                                     │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.jest-watch-typeahead-9Bwd2p1a/node_modules/slash/pac- │  node-pkg  │        0        │    -    │
+│ kage.json                                                                        │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.jest-watch-typeahead-9Bwd2p1a/node_modules/string-le- │  node-pkg  │        0        │    -    │
+│ ngth/node_modules/char-regex/package.json                                        │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.jest-watch-typeahead-9Bwd2p1a/node_modules/string-le- │  node-pkg  │        0        │    -    │
+│ ngth/package.json                                                                │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.jest-watch-typeahead-9Bwd2p1a/node_modules/strip-ans- │  node-pkg  │        0        │    -    │
+│ i/node_modules/ansi-regex/package.json                                           │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.jest-watch-typeahead-9Bwd2p1a/node_modules/strip-ans- │  node-pkg  │        0        │    -    │
+│ i/package.json                                                                   │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.jest-worker-9uEqyquU/node_modules/supports-color/pac- │  node-pkg  │        0        │    -    │
+│ kage.json                                                                        │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.jsonpath-yWpZv2af/node_modules/esprima/package.json   │  node-pkg  │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.make-dir-HHstHrQW/node_modules/semver/package.json    │  node-pkg  │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.node-exports-info-Tor2ea22/node_modules/semver/packa- │  node-pkg  │        0        │    -    │
+│ ge.json                                                                          │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.pkg-up-wO0Zli5x/node_modules/find-up/package.json     │  node-pkg  │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.pkg-up-wO0Zli5x/node_modules/locate-path/package.json │  node-pkg  │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.pkg-up-wO0Zli5x/node_modules/p-locate/package.json    │  node-pkg  │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.pkg-up-wO0Zli5x/node_modules/path-exists/package.json │  node-pkg  │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.postcss-modules-local-by-default-yl6nR6e1/node_modul- │  node-pkg  │        0        │    -    │
+│ es/postcss-selector-parser/package.json                                          │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.postcss-modules-scope-dVa1xfRk/node_modules/postcss-- │  node-pkg  │        0        │    -    │
+│ selector-parser/package.json                                                     │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.postcss-svgo-R6top9y7/node_modules/commander/package- │  node-pkg  │        0        │    -    │
+│ .json                                                                            │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.postcss-svgo-R6top9y7/node_modules/css-tree/package.- │  node-pkg  │        0        │    -    │
+│ json                                                                             │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.postcss-svgo-R6top9y7/node_modules/mdn-data/package.- │  node-pkg  │        0        │    -    │
+│ json                                                                             │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.postcss-svgo-R6top9y7/node_modules/source-map/packag- │  node-pkg  │        0        │    -    │
+│ e.json                                                                           │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.postcss-svgo-R6top9y7/node_modules/svgo/package.json  │  node-pkg  │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.prop-types-NAm4jQgM/node_modules/react-is/package.js- │  node-pkg  │        0        │    -    │
+│ on                                                                               │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.proxy-addr-WfNuYZZy/node_modules/ipaddr.js/package.j- │  node-pkg  │        0        │    -    │
+│ son                                                                              │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.raw-body-DEtF4b2b/node_modules/iconv-lite/package.js- │  node-pkg  │        0        │    -    │
+│ on                                                                               │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.react-dev-utils-UlF6hgaf/node_modules/find-up/packag- │  node-pkg  │        0        │    -    │
+│ e.json                                                                           │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.react-dev-utils-UlF6hgaf/node_modules/loader-utils/p- │  node-pkg  │        0        │    -    │
+│ ackage.json                                                                      │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.react-dev-utils-UlF6hgaf/node_modules/locate-path/pa- │  node-pkg  │        0        │    -    │
+│ ckage.json                                                                       │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.react-dev-utils-UlF6hgaf/node_modules/p-limit/packag- │  node-pkg  │        0        │    -    │
+│ e.json                                                                           │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.react-dev-utils-UlF6hgaf/node_modules/p-locate/packa- │  node-pkg  │        0        │    -    │
+│ ge.json                                                                          │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.resolve-OI0QAOZi/test/resolver/multirepo/package.json │  node-pkg  │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.resolve-OI0QAOZi/test/resolver/multirepo/packages/pa- │  node-pkg  │        0        │    -    │
+│ ckage-a/package.json                                                             │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.resolve-OI0QAOZi/test/resolver/multirepo/packages/pa- │  node-pkg  │        0        │    -    │
+│ ckage-b/package.json                                                             │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.resolve-OI0QAOZi/test/resolver/nested_symlinks/mylib- │  node-pkg  │        0        │    -    │
+│ /package.json                                                                    │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.resolve-url-loader-nQPdGtrQ/node_modules/convert-sou- │  node-pkg  │        0        │    -    │
+│ rce-map/package.json                                                             │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.resolve-url-loader-nQPdGtrQ/node_modules/picocolors/- │  node-pkg  │        0        │    -    │
+│ package.json                                                                     │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.resolve-url-loader-nQPdGtrQ/node_modules/postcss/pac- │  node-pkg  │        1        │    -    │
+│ kage.json                                                                        │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.resolve-url-loader-nQPdGtrQ/node_modules/source-map/- │  node-pkg  │        0        │    -    │
+│ package.json                                                                     │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.rollup-plugin-terser-bTQSc4HO/node_modules/jest-work- │  node-pkg  │        0        │    -    │
+│ er/package.json                                                                  │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.rollup-plugin-terser-bTQSc4HO/node_modules/serialize- │  node-pkg  │        1        │    -    │
+│ -javascript/package.json                                                         │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.schema-utils-NqjW64cl/node_modules/ajv-keywords/pack- │  node-pkg  │        0        │    -    │
+│ age.json                                                                         │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.schema-utils-NqjW64cl/node_modules/ajv/package.json   │  node-pkg  │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.schema-utils-NqjW64cl/node_modules/json-schema-trave- │  node-pkg  │        0        │    -    │
+│ rse/package.json                                                                 │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.send-uIwqgQGK/node_modules/debug/node_modules/ms/pac- │  node-pkg  │        0        │    -    │
+│ kage.json                                                                        │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.send-uIwqgQGK/node_modules/debug/package.json         │  node-pkg  │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.serve-index-Y9IPGze5/node_modules/debug/package.json  │  node-pkg  │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.serve-index-Y9IPGze5/node_modules/depd/package.json   │  node-pkg  │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.serve-index-Y9IPGze5/node_modules/http-errors/packag- │  node-pkg  │        0        │    -    │
+│ e.json                                                                           │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.serve-index-Y9IPGze5/node_modules/ms/package.json     │  node-pkg  │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.serve-index-Y9IPGze5/node_modules/statuses/package.j- │  node-pkg  │        0        │    -    │
+│ son                                                                              │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.source-map-support-NZtPVjJn/node_modules/source-map/- │  node-pkg  │        0        │    -    │
+│ package.json                                                                     │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.stack-utils-xxqujyaK/node_modules/escape-string-rege- │  node-pkg  │        0        │    -    │
+│ xp/package.json                                                                  │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.string-width-ZiD7VqYE/node_modules/emoji-regex/packa- │  node-pkg  │        0        │    -    │
+│ ge.json                                                                          │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.sucrase-J4B5Ug6C/node_modules/commander/package.json  │  node-pkg  │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.svgo-DbdKLDvF/node_modules/ansi-styles/package.json   │  node-pkg  │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.svgo-DbdKLDvF/node_modules/chalk/package.json         │  node-pkg  │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.svgo-DbdKLDvF/node_modules/color-convert/package.json │  node-pkg  │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.svgo-DbdKLDvF/node_modules/color-name/package.json    │  node-pkg  │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.svgo-DbdKLDvF/node_modules/css-select/package.json    │  node-pkg  │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.svgo-DbdKLDvF/node_modules/css-what/package.json      │  node-pkg  │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.svgo-DbdKLDvF/node_modules/dom-serializer/package.js- │  node-pkg  │        0        │    -    │
+│ on                                                                               │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.svgo-DbdKLDvF/node_modules/domutils/node_modules/dom- │  node-pkg  │        0        │    -    │
+│ elementtype/package.json                                                         │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.svgo-DbdKLDvF/node_modules/domutils/package.json      │  node-pkg  │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.svgo-DbdKLDvF/node_modules/escape-string-regexp/pack- │  node-pkg  │        0        │    -    │
+│ age.json                                                                         │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.svgo-DbdKLDvF/node_modules/has-flag/package.json      │  node-pkg  │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.svgo-DbdKLDvF/node_modules/nth-check/package.json     │  node-pkg  │        1        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.svgo-DbdKLDvF/node_modules/supports-color/package.js- │  node-pkg  │        0        │    -    │
+│ on                                                                               │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.tailwindcss-s6J6DFX2/node_modules/lilconfig/package.- │  node-pkg  │        0        │    -    │
+│ json                                                                             │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.tailwindcss-s6J6DFX2/node_modules/postcss-load-confi- │  node-pkg  │        0        │    -    │
+│ g/package.json                                                                   │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.tempy-ENiHopFv/node_modules/type-fest/package.json    │  node-pkg  │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.terser-6MnzG0fO/node_modules/commander/package.json   │  node-pkg  │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.tinyglobby-QkZuW2Sw/node_modules/fdir/package.json    │  node-pkg  │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.tinyglobby-QkZuW2Sw/node_modules/picomatch/package.j- │  node-pkg  │        0        │    -    │
+│ son                                                                              │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.tough-cookie-2DicNeu3/node_modules/universalify/pack- │  node-pkg  │        0        │    -    │
+│ age.json                                                                         │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.tsconfig-paths-OrSiBUm6/node_modules/json5/package.j- │  node-pkg  │        0        │    -    │
+│ son                                                                              │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.tsconfig-paths-OrSiBUm6/node_modules/strip-bom/packa- │  node-pkg  │        0        │    -    │
+│ ge.json                                                                          │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.tsutils-42AkfpYq/node_modules/tslib/package.json      │  node-pkg  │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.v8-to-istanbul-HWde4D35/node_modules/convert-source-- │  node-pkg  │        0        │    -    │
+│ map/package.json                                                                 │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.webpack-dev-server-I9ftwKgd/node_modules/ws/package.- │  node-pkg  │        0        │    -    │
+│ json                                                                             │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.webpack-mUw4TlKg/node_modules/eslint-scope/package.j- │  node-pkg  │        0        │    -    │
+│ son                                                                              │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.webpack-mUw4TlKg/node_modules/estraverse/package.json │  node-pkg  │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.webpack-manifest-plugin-xisbkz4z/node_modules/source- │  node-pkg  │        0        │    -    │
+│ -map/package.json                                                                │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.webpack-manifest-plugin-xisbkz4z/node_modules/webpac- │  node-pkg  │        0        │    -    │
+│ k-sources/package.json                                                           │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.whatwg-encoding-4wDMpqyl/node_modules/iconv-lite/pac- │  node-pkg  │        0        │    -    │
+│ kage.json                                                                        │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.workbox-build-MF5wHDVd/node_modules/@apideck/better-- │  node-pkg  │        0        │    -    │
+│ ajv-errors/package.json                                                          │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.workbox-build-MF5wHDVd/node_modules/ajv/package.json  │  node-pkg  │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.workbox-build-MF5wHDVd/node_modules/fs-extra/package- │  node-pkg  │        0        │    -    │
+│ .json                                                                            │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.workbox-build-MF5wHDVd/node_modules/json-schema-trav- │  node-pkg  │        0        │    -    │
+│ erse/package.json                                                                │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.workbox-build-MF5wHDVd/node_modules/source-map/packa- │  node-pkg  │        0        │    -    │
+│ ge.json                                                                          │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.workbox-build-MF5wHDVd/node_modules/tr46/package.json │  node-pkg  │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.workbox-build-MF5wHDVd/node_modules/webidl-conversio- │  node-pkg  │        0        │    -    │
+│ ns/package.json                                                                  │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.workbox-build-MF5wHDVd/node_modules/whatwg-url/packa- │  node-pkg  │        0        │    -    │
+│ ge.json                                                                          │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.workbox-webpack-plugin-Wcc6UFqR/node_modules/source-- │  node-pkg  │        0        │    -    │
+│ map/package.json                                                                 │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.workbox-webpack-plugin-Wcc6UFqR/node_modules/webpack- │  node-pkg  │        0        │    -    │
+│ -sources/package.json                                                            │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/.wrap-ansi-OtAWdWeK/node_modules/ansi-styles/package.- │  node-pkg  │        0        │    -    │
+│ json                                                                             │            │                 │         │
 ├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
 │ app/frontend/node_modules/@adobe/css-tools/package.json                          │  node-pkg  │        0        │    -    │
 ├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
 │ app/frontend/node_modules/@alloc/quick-lru/package.json                          │  node-pkg  │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/@babel/.plugin-transform-runtime-tBsdEB6e/node_module- │  node-pkg  │        0        │    -    │
+│ s/babel-plugin-polyfill-corejs3/package.json                                     │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/@babel/.plugin-transform-runtime-tBsdEB6e/node_module- │  node-pkg  │        0        │    -    │
+│ s/semver/package.json                                                            │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/@babel/.preset-env-uSUUvDzw/node_modules/semver/packa- │  node-pkg  │        0        │    -    │
+│ ge.json                                                                          │            │                 │         │
 ├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
 │ app/frontend/node_modules/@babel/code-frame/package.json                         │  node-pkg  │        0        │    -    │
 ├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
@@ -322,6 +820,8 @@ Report Summary
 ├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
 │ app/frontend/node_modules/@babel/types/package.json                              │  node-pkg  │        0        │    -    │
 ├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/@bcoe/.v8-coverage-RE6L39Um/dist/lib/package.json      │  node-pkg  │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
 │ app/frontend/node_modules/@bcoe/v8-coverage/dist/lib/package.json                │  node-pkg  │        0        │    -    │
 ├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
 │ app/frontend/node_modules/@bcoe/v8-coverage/package.json                         │  node-pkg  │        0        │    -    │
@@ -365,6 +865,12 @@ Report Summary
 ├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
 │ app/frontend/node_modules/@eslint-community/regexpp/package.json                 │  node-pkg  │        0        │    -    │
 ├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/@eslint/.eslintrc-muO8K14X/node_modules/argparse/pack- │  node-pkg  │        0        │    -    │
+│ age.json                                                                         │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/@eslint/.eslintrc-muO8K14X/node_modules/js-yaml/packa- │  node-pkg  │        0        │    -    │
+│ ge.json                                                                          │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
 │ app/frontend/node_modules/@eslint/eslintrc/node_modules/argparse/package.json    │  node-pkg  │        0        │    -    │
 ├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
 │ app/frontend/node_modules/@eslint/eslintrc/node_modules/js-yaml/package.json     │  node-pkg  │        0        │    -    │
@@ -379,12 +885,27 @@ Report Summary
 ├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
 │ app/frontend/node_modules/@humanwhocodes/object-schema/package.json              │  node-pkg  │        0        │    -    │
 ├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/@istanbuljs/.load-nyc-config-KixR2XqH/node_modules/ca- │  node-pkg  │        0        │    -    │
+│ melcase/package.json                                                             │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
 │ app/frontend/node_modules/@istanbuljs/load-nyc-config/node_modules/camelcase/pa- │  node-pkg  │        0        │    -    │
 │ ckage.json                                                                       │            │                 │         │
 ├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
 │ app/frontend/node_modules/@istanbuljs/load-nyc-config/package.json               │  node-pkg  │        0        │    -    │
 ├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
 │ app/frontend/node_modules/@istanbuljs/schema/package.json                        │  node-pkg  │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/@jest/.reporters-5MCA6oeT/node_modules/source-map/pac- │  node-pkg  │        0        │    -    │
+│ kage.json                                                                        │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/@jest/.source-map-coiYQhY6/node_modules/source-map/pa- │  node-pkg  │        0        │    -    │
+│ ckage.json                                                                       │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/@jest/.transform-saVyWvAp/node_modules/convert-source- │  node-pkg  │        0        │    -    │
+│ -map/package.json                                                                │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/@jest/.transform-saVyWvAp/node_modules/source-map/pac- │  node-pkg  │        0        │    -    │
+│ kage.json                                                                        │            │                 │         │
 ├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
 │ app/frontend/node_modules/@jest/console/package.json                             │  node-pkg  │        0        │    -    │
 ├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
@@ -433,6 +954,12 @@ Report Summary
 ├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
 │ app/frontend/node_modules/@leichtgewicht/ip-codec/package.json                   │  node-pkg  │        0        │    -    │
 ├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/@nicolo-ribaudo/.eslint-scope-5-internals-Gml9YWjD/no- │  node-pkg  │        0        │    -    │
+│ de_modules/eslint-scope/package.json                                             │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/@nicolo-ribaudo/.eslint-scope-5-internals-Gml9YWjD/no- │  node-pkg  │        0        │    -    │
+│ de_modules/estraverse/package.json                                               │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
 │ app/frontend/node_modules/@nicolo-ribaudo/eslint-scope-5-internals/node_modules- │  node-pkg  │        0        │    -    │
 │ /eslint-scope/package.json                                                       │            │                 │         │
 ├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
@@ -450,6 +977,9 @@ Report Summary
 │ app/frontend/node_modules/@pmmmwh/react-refresh-webpack-plugin/package.json      │  node-pkg  │        0        │    -    │
 ├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
 │ app/frontend/node_modules/@popperjs/core/package.json                            │  node-pkg  │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/@rollup/.pluginutils-B45plyQO/node_modules/@types/est- │  node-pkg  │        0        │    -    │
+│ ree/package.json                                                                 │            │                 │         │
 ├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
 │ app/frontend/node_modules/@rollup/plugin-babel/package.json                      │  node-pkg  │        0        │    -    │
 ├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
@@ -520,6 +1050,12 @@ Report Summary
 │ app/frontend/node_modules/@tootallnate/once/package.json                         │  node-pkg  │        0        │    -    │
 ├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
 │ app/frontend/node_modules/@trysound/sax/package.json                             │  node-pkg  │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/@types/.express-HmO7Zm1G/node_modules/@types/express-- │  node-pkg  │        0        │    -    │
+│ serve-static-core/package.json                                                   │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/@types/.serve-static-6Nip6I9e/node_modules/@types/sen- │  node-pkg  │        0        │    -    │
+│ d/package.json                                                                   │            │                 │         │
 ├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
 │ app/frontend/node_modules/@types/aria-query/package.json                         │  node-pkg  │        0        │    -    │
 ├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
@@ -612,6 +1148,12 @@ Report Summary
 │ app/frontend/node_modules/@types/yargs-parser/package.json                       │  node-pkg  │        0        │    -    │
 ├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
 │ app/frontend/node_modules/@types/yargs/package.json                              │  node-pkg  │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/@typescript-eslint/.utils-5xkqJYx7/node_modules/eslin- │  node-pkg  │        0        │    -    │
+│ t-scope/package.json                                                             │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/frontend/node_modules/@typescript-eslint/.utils-5xkqJYx7/node_modules/estra- │  node-pkg  │        0        │    -    │
+│ verse/package.json                                                               │            │                 │         │
 ├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
 │ app/frontend/node_modules/@typescript-eslint/eslint-plugin/package.json          │  node-pkg  │        0        │    -    │
 ├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
@@ -2973,7 +3515,7 @@ Report Summary
 │ usr/local/lib/python3.11/site-packages/typing_inspection-0.4.2.dist-info/METADA- │ python-pkg │        0        │    -    │
 │ TA                                                                               │            │                 │         │
 ├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
-│ usr/local/lib/python3.11/site-packages/urllib3-2.6.3.dist-info/METADATA          │ python-pkg │        0        │    -    │
+│ usr/local/lib/python3.11/site-packages/urllib3-1.26.5.dist-info/METADATA         │ python-pkg │        7        │    -    │
 ├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
 │ usr/local/lib/python3.11/site-packages/uvicorn-0.40.0.dist-info/METADATA         │ python-pkg │        0        │    -    │
 ├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
@@ -2990,7 +3532,7 @@ Legend:
 
 Node.js (node-pkg)
 ==================
-Total: 7 (UNKNOWN: 0, LOW: 0, MEDIUM: 3, HIGH: 4, CRITICAL: 0)
+Total: 10 (UNKNOWN: 0, LOW: 0, MEDIUM: 4, HIGH: 6, CRITICAL: 0)
 
 ┌─────────────────────────────────────┬─────────────────────┬──────────┬──────────┬───────────────────┬───────────────┬──────────────────────────────────────────────────────────────┐
 │               Library               │    Vulnerability    │ Severity │  Status  │ Installed Version │ Fixed Version │                            Title                             │
@@ -3001,13 +3543,23 @@ Total: 7 (UNKNOWN: 0, LOW: 0, MEDIUM: 3, HIGH: 4, CRITICAL: 0)
 ├─────────────────────────────────────┼─────────────────────┤          ├──────────┼───────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
 │ nth-check (package.json)            │ CVE-2021-3803       │          │ fixed    │ 1.0.2             │ 2.0.1         │ nodejs-nth-check: inefficient regular expression complexity  │
 │                                     │                     │          │          │                   │               │ https://avd.aquasec.com/nvd/cve-2021-3803                    │
+│                                     │                     │          │          │                   │               │                                                              │
+│                                     │                     │          │          │                   │               │                                                              │
+│                                     │                     │          │          │                   │               │                                                              │
 ├─────────────────────────────────────┼─────────────────────┼──────────┤          ├───────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
 │ postcss (package.json)              │ CVE-2023-44270      │ MEDIUM   │          │ 7.0.39            │ 8.4.31        │ PostCSS: Improper input validation in PostCSS                │
 │                                     │                     │          │          │                   │               │ https://avd.aquasec.com/nvd/cve-2023-44270                   │
+│                                     │                     │          │          │                   │               │                                                              │
+│                                     │                     │          │          │                   │               │                                                              │
+│                                     │                     │          │          │                   │               │                                                              │
 ├─────────────────────────────────────┼─────────────────────┼──────────┤          ├───────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
 │ serialize-javascript (package.json) │ GHSA-5c6j-r48x-rmvq │ HIGH     │          │ 4.0.0             │ 7.0.3         │ Serialize JavaScript is Vulnerable to RCE via RegExp.flags   │
 │                                     │                     │          │          │                   │               │ and Date.prototype.toISOString()                             │
 │                                     │                     │          │          │                   │               │ https://github.com/advisories/GHSA-5c6j-r48x-rmvq            │
+│                                     │                     │          │          │                   │               │                                                              │
+│                                     │                     │          │          │                   │               │                                                              │
+│                                     │                     │          │          │                   │               │                                                              │
+│                                     │                     │          │          │                   │               │                                                              │
 │                                     │                     │          │          ├───────────────────┤               │                                                              │
 │                                     │                     │          │          │ 6.0.2             │               │                                                              │
 │                                     │                     │          │          │                   │               │                                                              │
@@ -3019,3 +3571,39 @@ Total: 7 (UNKNOWN: 0, LOW: 0, MEDIUM: 3, HIGH: 4, CRITICAL: 0)
 │                                     │ CVE-2025-30360      │          │          │                   │               │ webpack-dev-server: webpack-dev-server information exposure  │
 │                                     │                     │          │          │                   │               │ https://avd.aquasec.com/nvd/cve-2025-30360                   │
 └─────────────────────────────────────┴─────────────────────┴──────────┴──────────┴───────────────────┴───────────────┴──────────────────────────────────────────────────────────────┘
+
+Python (python-pkg)
+===================
+Total: 7 (UNKNOWN: 0, LOW: 0, MEDIUM: 3, HIGH: 4, CRITICAL: 0)
+
+┌────────────────────┬────────────────┬──────────┬────────┬───────────────────┬────────────────┬──────────────────────────────────────────────────────────────┐
+│      Library       │ Vulnerability  │ Severity │ Status │ Installed Version │ Fixed Version  │                            Title                             │
+├────────────────────┼────────────────┼──────────┼────────┼───────────────────┼────────────────┼──────────────────────────────────────────────────────────────┤
+│ urllib3 (METADATA) │ CVE-2023-43804 │ HIGH     │ fixed  │ 1.26.5            │ 2.0.6, 1.26.17 │ python-urllib3: Cookie request header isn't stripped during  │
+│                    │                │          │        │                   │                │ cross-origin redirects                                       │
+│                    │                │          │        │                   │                │ https://avd.aquasec.com/nvd/cve-2023-43804                   │
+│                    ├────────────────┤          │        │                   ├────────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2025-66418 │          │        │                   │ 2.6.0          │ urllib3: urllib3: Unbounded decompression chain leads to     │
+│                    │                │          │        │                   │                │ resource exhaustion                                          │
+│                    │                │          │        │                   │                │ https://avd.aquasec.com/nvd/cve-2025-66418                   │
+│                    ├────────────────┤          │        │                   │                ├──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2025-66471 │          │        │                   │                │ urllib3: urllib3 Streaming API improperly handles highly     │
+│                    │                │          │        │                   │                │ compressed data                                              │
+│                    │                │          │        │                   │                │ https://avd.aquasec.com/nvd/cve-2025-66471                   │
+│                    ├────────────────┤          │        │                   ├────────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2026-21441 │          │        │                   │ 2.6.3          │ urllib3: urllib3 vulnerable to decompression-bomb safeguard  │
+│                    │                │          │        │                   │                │ bypass when following HTTP redirects (streaming...           │
+│                    │                │          │        │                   │                │ https://avd.aquasec.com/nvd/cve-2026-21441                   │
+│                    ├────────────────┼──────────┤        │                   ├────────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2023-45803 │ MEDIUM   │        │                   │ 2.0.7, 1.26.18 │ urllib3: Request body not stripped after redirect from 303   │
+│                    │                │          │        │                   │                │ status changes request...                                    │
+│                    │                │          │        │                   │                │ https://avd.aquasec.com/nvd/cve-2023-45803                   │
+│                    ├────────────────┤          │        │                   ├────────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2024-37891 │          │        │                   │ 1.26.19, 2.2.2 │ urllib3: proxy-authorization request header is not stripped  │
+│                    │                │          │        │                   │                │ during cross-origin redirects                                │
+│                    │                │          │        │                   │                │ https://avd.aquasec.com/nvd/cve-2024-37891                   │
+│                    ├────────────────┤          │        │                   ├────────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2025-50181 │          │        │                   │ 2.5.0          │ urllib3: urllib3 redirects are not disabled when retries are │
+│                    │                │          │        │                   │                │ disabled on PoolManager...                                   │
+│                    │                │          │        │                   │                │ https://avd.aquasec.com/nvd/cve-2025-50181                   │
+└────────────────────┴────────────────┴──────────┴────────┴───────────────────┴────────────────┴──────────────────────────────────────────────────────────────┘
