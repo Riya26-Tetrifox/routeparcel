@@ -1,3 +1,4 @@
+
 from azure.monitor.opentelemetry import configure_azure_monitor
 import logging
 from opentelemetry.instrumentation.logging import LoggingInstrumentor

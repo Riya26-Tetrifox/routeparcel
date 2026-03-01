@@ -4,42 +4,162 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
 
 jobs:
   build-scan-push:
     runs-on: ubuntu-latest
 
     steps:
+      # 1️⃣ Checkout Repository
       - name: Checkout Code
         uses: actions/checkout@v4
 
+      # 2️⃣ Setup Docker Buildx
       - name: Set up Docker Build
         uses: docker/setup-buildx-action@v3
 
-      - name: Build Docker Image
-        run: |
-          docker build -t myimg:latest .
+      # 3️⃣ Setup Python
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: 3.11
 
+      # 4️⃣ Install Dependencies (for tests)
+      - name: Install Dependencies
+        run: |
+          pip install -r requirements.txt
+
+      # 5️⃣ Build Docker Image
+      - name: Build Docker Image
+        run: docker build -t myimg:latest .
+
+      # 6️⃣ Scan Image with Trivy (Generate JSON)
       - name: Scan Image with Trivy
         uses: aquasecurity/trivy-action@0.20.0
         with:
           image-ref: myimg:latest
-          format: table
-          exit-code: 1
-          ignore-unfixed: true
+          format: json
+          output: security-bot/report/trivy_report.json
           severity: CRITICAL,HIGH
+          exit-code: 0
+          ignore-unfixed: false
 
+      - name: Run Auto Remediation
+        id: auto_fix
+        run: |
+          OUTPUT=$(python3 security-bot/main.py)
+          echo "$OUTPUT"
+          if [[ "$OUTPUT" == *"VULNERABILITIES_FOUND"* ]]; then
+            echo "fix_needed=true" >> $GITHUB_OUTPUT
+          else
+            echo "fix_needed=false" >> $GITHUB_OUTPUT
+          fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          EMAIL_USER: ${{ secrets.EMAIL_USER }}
+          EMAIL_PASS: ${{ secrets.EMAIL_PASS }}
+          EMAIL_TO: ${{ secrets.EMAIL_TO }}
+
+      - name: Rebuild Docker Image After Fix
+        if: steps.auto_fix.outputs.fix_needed == 'true'
+        run: docker build -t myimg:fixed .
+
+      - name: Re-Scan Image After Fix
+        if: steps.auto_fix.outputs.fix_needed == 'true'
+        uses: aquasecurity/trivy-action@0.20.0
+        with:
+          image-ref: myimg:fixed
+          severity: CRITICAL,HIGH
+          exit-code: 1
+
+
+      # 1️⃣ Create Pull Request for Fix
+      - name: Create Pull Request
+        if: steps.auto_fix.outputs.fix_needed == 'true'
+        uses: peter-evans/create-pull-request@v6
+        with:
+          commit-message: "🔐 Auto-fix HIGH/CRITICAL vulnerabilities"
+          branch: security/auto-fix
+          title: "Security Auto Remediation"
+          body: |
+            This PR automatically fixes HIGH/CRITICAL vulnerabilities detected by Trivy.
+
+      # 1️⃣2️⃣ Login to Azure ACR (Only if clean)
       - name: Login to Azure
+        if: success()
         uses: azure/docker-login@v2
         with:
           login-server: riyavulneraility.azurecr.io
           username: ${{ secrets.ACR_USERNAME }}
           password: ${{ secrets.ACR_PASSWORD }}
 
+      # 1️⃣3️⃣ Tag Image
       - name: Tag Image
         run: |
-          docker tag myimg:latest riyavulneraility.azurecr.io/myimg:latest
+          if [[ "${{ steps.auto_fix.outputs.fix_needed }}" == "true" ]]; then
+            docker tag myimg:fixed riyavulneraility.azurecr.io/myimg:latest
+          else
+            docker tag myimg:latest riyavulneraility.azurecr.io/myimg:latest
+          fi
 
+
+      # 1️⃣4️⃣ Push Image to Azure ACR
       - name: Push Image
-        run: |
-          docker push riyavulneraility.azurecr.io/myimg:latest
+        if: success() && steps.auto_fix.outputs.fix_needed != 'true'
+        run: docker push riyavulneraility.azurecr.io/myimg:latest
+
+
+
+
+
+
+# name: CI/CD Pipeline
+
+# on:
+#   push:
+#     branches:
+#       - main
+
+# jobs:
+#   build-scan-push:
+#     runs-on: ubuntu-latest
+
+#     steps:
+#       - name: Checkout Code
+#         uses: actions/checkout@v4
+
+#       - name: Set up Docker Build
+#         uses: docker/setup-buildx-action@v3
+
+#       - name: Build Docker Image
+#         run: |
+#           docker build -t myimg:latest .
+
+#       - name: Scan Image with Trivy
+#         uses: aquasecurity/trivy-action@0.20.0
+#         with:
+#           image-ref: myimg:latest
+#           format: table
+#           exit-code: 1
+#           ignore-unfixed: true
+#           severity: CRITICAL,HIGH
+
+#       - name: Login to Azure
+#         uses: azure/docker-login@v2
+#         with:
+#           login-server: riyavulneraility.azurecr.io
+#           username: ${{ secrets.ACR_USERNAME }}
+#           password: ${{ secrets.ACR_PASSWORD }}
+
+#       - name: Tag Image
+#         run: |
+#           docker tag myimg:latest riyavulneraility.azurecr.io/myimg:latest
+
+#       - name: Push Image
+#         run: |
+#           docker push riyavulneraility.azurecr.io/myimg:latest
