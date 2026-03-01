@@ -1,6 +1,6 @@
 {
   "SchemaVersion": 2,
-  "CreatedAt": "2026-03-01T16:25:59.770769314Z",
+  "CreatedAt": "2026-03-01T16:46:58.105206171Z",
   "ArtifactName": "myimg:latest",
   "ArtifactType": "container_image",
   "Metadata": {
@@ -8,24 +8,24 @@
       "Family": "alpine",
       "Name": "3.23.3"
     },
-    "ImageID": "sha256:832bf45c0bfee2d1e0044fc1a6c54250cc09ef92edcdd3aef2ef6127cdcfa4e9",
+    "ImageID": "sha256:dfda471a4a208f6cd43178518da396811eedccf81a856af207391d0616687aa6",
     "DiffIDs": [
       "sha256:989e799e634906e94dc9a5ee2ee26fc92ad260522990f26e707861a5f52bf64e",
       "sha256:f48db1250229413990755e6cb202a137a4f94af2a2ca44e1e9b58dd31a842343",
       "sha256:0a332fc39113af997ce68551c91bde16e75b144c8961ba6b97e81d91e3f905e6",
       "sha256:efa0aeed5d4f69606776cd4816d6e4161eb378e9b85b6524f741825c0f7e04d2",
-      "sha256:b9503b128352ea716bc431fa2aa534c4a3e43aa029b9f6aeb89048242059f0bc",
-      "sha256:c0fc5f1d525547462d836c7d808e0c05adc3afb5f5ca8fed7bbfcaa8a3392cdf",
-      "sha256:9bf1977eb7f55adeaa2f93fbb32591031715dc024f349dfc4c729b0da486bf67",
-      "sha256:d6c207f98baff09ee92b3e59db5185c2b488525e4e8a4ae47ba23cc95df6e038",
-      "sha256:44b13c77118cba84e9c8bedb8d52a233b19e72ed0d19e2a2e3da9934874fc5b6"
+      "sha256:2bb3bf52bf9e65de3e407b590bbcb2501410a640f8c538f8d3f494d905d0b472",
+      "sha256:e092e6c684078bee6cd9018bc0dd7a294ebfdd8f19195f7522be47894f435fd1",
+      "sha256:b4bfd442375a3d7d4512233afff831040b192574afc89db37742ff509fac5bfa",
+      "sha256:8b28023eb0b5245224cb2eb2f5a8a60d674a6a187d70b26ad80f8d847d6c1e56",
+      "sha256:3cd4509dcc0a9117b1d14f69cc962fddb4b7c50f950f93599455c6e12bf4b3f4"
     ],
     "RepoTags": [
       "myimg:latest"
     ],
     "ImageConfig": {
       "architecture": "amd64",
-      "created": "2026-03-01T16:25:50.066354877Z",
+      "created": "2026-03-01T16:46:48.908872518Z",
       "history": [
         {
           "created": "2026-01-28T01:18:04Z",
@@ -90,38 +90,38 @@
           "empty_layer": true
         },
         {
-          "created": "2026-03-01T16:25:35Z",
+          "created": "2026-03-01T16:46:34Z",
           "created_by": "WORKDIR /app",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2026-03-01T16:25:35Z",
+          "created": "2026-03-01T16:46:34Z",
           "created_by": "COPY requirements.txt . # buildkit",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2026-03-01T16:25:40Z",
+          "created": "2026-03-01T16:46:39Z",
           "created_by": "RUN /bin/sh -c pip install --upgrade pip setuptools wheel --no-cache-dir # buildkit",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2026-03-01T16:25:50Z",
+          "created": "2026-03-01T16:46:48Z",
           "created_by": "RUN /bin/sh -c pip install --no-cache-dir -r requirements.txt # buildkit",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2026-03-01T16:25:50Z",
+          "created": "2026-03-01T16:46:48Z",
           "created_by": "COPY . . # buildkit",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2026-03-01T16:25:50Z",
+          "created": "2026-03-01T16:46:48Z",
           "created_by": "EXPOSE map[8000/tcp:{}]",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-03-01T16:25:50Z",
+          "created": "2026-03-01T16:46:48Z",
           "created_by": "CMD [\"uvicorn\" \"backend.main:app\" \"--host\" \"0.0.0.0\" \"--port\" \"8000\"]",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
@@ -135,11 +135,11 @@
           "sha256:f48db1250229413990755e6cb202a137a4f94af2a2ca44e1e9b58dd31a842343",
           "sha256:0a332fc39113af997ce68551c91bde16e75b144c8961ba6b97e81d91e3f905e6",
           "sha256:efa0aeed5d4f69606776cd4816d6e4161eb378e9b85b6524f741825c0f7e04d2",
-          "sha256:b9503b128352ea716bc431fa2aa534c4a3e43aa029b9f6aeb89048242059f0bc",
-          "sha256:c0fc5f1d525547462d836c7d808e0c05adc3afb5f5ca8fed7bbfcaa8a3392cdf",
-          "sha256:9bf1977eb7f55adeaa2f93fbb32591031715dc024f349dfc4c729b0da486bf67",
-          "sha256:d6c207f98baff09ee92b3e59db5185c2b488525e4e8a4ae47ba23cc95df6e038",
-          "sha256:44b13c77118cba84e9c8bedb8d52a233b19e72ed0d19e2a2e3da9934874fc5b6"
+          "sha256:2bb3bf52bf9e65de3e407b590bbcb2501410a640f8c538f8d3f494d905d0b472",
+          "sha256:e092e6c684078bee6cd9018bc0dd7a294ebfdd8f19195f7522be47894f435fd1",
+          "sha256:b4bfd442375a3d7d4512233afff831040b192574afc89db37742ff509fac5bfa",
+          "sha256:8b28023eb0b5245224cb2eb2f5a8a60d674a6a187d70b26ad80f8d847d6c1e56",
+          "sha256:3cd4509dcc0a9117b1d14f69cc962fddb4b7c50f950f93599455c6e12bf4b3f4"
         ]
       },
       "config": {
@@ -186,7 +186,7 @@
           "FixedVersion": "2.6.0",
           "Status": "fixed",
           "Layer": {
-            "DiffID": "sha256:d6c207f98baff09ee92b3e59db5185c2b488525e4e8a4ae47ba23cc95df6e038"
+            "DiffID": "sha256:8b28023eb0b5245224cb2eb2f5a8a60d674a6a187d70b26ad80f8d847d6c1e56"
           },
           "SeveritySource": "ghsa",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-66418",
@@ -265,7 +265,7 @@
           "FixedVersion": "2.6.0",
           "Status": "fixed",
           "Layer": {
-            "DiffID": "sha256:d6c207f98baff09ee92b3e59db5185c2b488525e4e8a4ae47ba23cc95df6e038"
+            "DiffID": "sha256:8b28023eb0b5245224cb2eb2f5a8a60d674a6a187d70b26ad80f8d847d6c1e56"
           },
           "SeveritySource": "ghsa",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-66471",
@@ -345,7 +345,7 @@
           "FixedVersion": "2.6.3",
           "Status": "fixed",
           "Layer": {
-            "DiffID": "sha256:d6c207f98baff09ee92b3e59db5185c2b488525e4e8a4ae47ba23cc95df6e038"
+            "DiffID": "sha256:8b28023eb0b5245224cb2eb2f5a8a60d674a6a187d70b26ad80f8d847d6c1e56"
           },
           "SeveritySource": "ghsa",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-21441",
