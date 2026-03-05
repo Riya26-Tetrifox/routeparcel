@@ -38,6 +38,10 @@ jobs:
       - name: Build Docker Image
         run: docker build -t myimg:latest .
 
+      - name: Create report directory
+        run: mkdir -p security-bot/report
+
+
       # 6️⃣ Scan Image with Trivy (Generate JSON)
       - name: Scan Image with Trivy
         uses: aquasecurity/trivy-action@0.20.0
