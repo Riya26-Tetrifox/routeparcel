@@ -65,10 +65,7 @@ jobs:
           fi
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          EMAIL_USER: ${{ secrets.EMAIL_USER }}
-          EMAIL_PASS: ${{ secrets.EMAIL_PASS }}
-          EMAIL_TO: ${{ secrets.EMAIL_TO }}
-
+         
       - name: Rebuild Docker Image After Fix
         if: steps.auto_fix.outputs.fix_needed == 'true'
         run: docker build -t myimg:fixed .
