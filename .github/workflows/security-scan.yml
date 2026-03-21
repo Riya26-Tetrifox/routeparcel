@@ -44,7 +44,7 @@ jobs:
 
       # 6️⃣ Scan Image with Trivy (Generate JSON)
       - name: Scan Image with Trivy
-        uses: aquasecurity/trivy-action@0.28.0
+        uses: aquasecurity/trivy-action@v0.20.0
         with:
           image-ref: myimg:latest
           format: json
@@ -72,7 +72,7 @@ jobs:
 
       - name: Re-Scan Image After Fix
         if: steps.auto_fix.outputs.fix_needed == 'true'
-        uses: aquasecurity/trivy-action@0.28.0
+        uses: aquasecurity/trivy-action@v0.20.0
         with:
           image-ref: myimg:fixed
           severity: CRITICAL,HIGH
