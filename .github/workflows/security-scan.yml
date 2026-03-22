@@ -90,31 +90,6 @@ jobs:
           body: |
             This PR automatically fixes HIGH/CRITICAL vulnerabilities detected by Trivy.
 
-      # 1️⃣2️⃣ Login to Azure ACR (Only if clean)
-      - name: Login to Azure
-        if: success()
-        uses: azure/docker-login@v2
-        with:
-          login-server: riyavulneraility.azurecr.io
-          username: ${{ secrets.ACR_USERNAME }}
-          password: ${{ secrets.ACR_PASSWORD }}
-
-      # 1️⃣3️⃣ Tag Image
-      - name: Tag Image
-        run: |
-          if [[ "${{ steps.auto_fix.outputs.fix_needed }}" == "true" ]]; then
-            docker tag myimg:fixed riyavulneraility.azurecr.io/myimg:latest
-          else
-            docker tag myimg:latest riyavulneraility.azurecr.io/myimg:latest
-          fi
-
-
-      # 1️⃣4️⃣ Push Image to Azure ACR
-      - name: Push Image
-        if: success() && steps.auto_fix.outputs.fix_needed != 'true'
-        run: docker push riyavulneraility.azurecr.io/myimg:latest
-
-
 
 
 
