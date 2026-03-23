@@ -59,8 +59,13 @@ jobs:
           ignore-unfixed: false
           # 6️⃣ 📦 Generate SBOM (Software Bill of Materials)
       - name: Generate SBOM
-        run: |
-          trivy fs --format cyclonedx --output sbom.json .
+        uses: aquasecurity/trivy-action@v0.20.0
+        with:
+          scan-type: fs
+          scan-ref: .
+          format: cyclonedx
+          output: sbom.json
+
 
       # 7️⃣ 🔎 Scan SBOM
       - name: Scan SBOM
@@ -79,7 +84,7 @@ jobs:
       - name: Run CodeQL Analysis
         uses: github/codeql-action/analyze@v3
 
-        
+
       - name: Run Auto Remediation
         id: auto_fix
         run: |
