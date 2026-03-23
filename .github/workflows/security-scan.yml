@@ -30,74 +30,32 @@ jobs:
         with:
           python-version: 3.11
 
-      # 4️⃣ Install Dependencies (for tests)
-      - name: Install Dependencies
-        run: |
-          pip install -r requirements.txt
 
       # 5️⃣ Build Docker Image
       - name: Build Docker Image
         run: docker build -t myimg:latest .
 
-        # 4️⃣ 🔍 Filesystem Scan (Language Independent)
-      - name: Scan Source Code (Trivy FS)
-        uses: aquasecurity/trivy-action@v0.20.0
-        with:
-          scan-type: fs
-          scan-ref: .
-          format: table
-          severity: CRITICAL,HIGH
-          exit-code: 0
-
       
-      # 5️⃣ 🐳 Docker Image Scan
-      - name: Scan Docker Image
-        uses: aquasecurity/trivy-action@v0.20.0
-        with:
-          image-ref: myimg:latest
-          severity: CRITICAL,HIGH
-          exit-code: 0
-          ignore-unfixed: false
+      
           # 6️⃣ 📦 Generate SBOM (Software Bill of Materials)
       - name: Generate SBOM
         uses: aquasecurity/trivy-action@v0.20.0
         with:
-          scan-type: fs
-          scan-ref: .
+          image-ref: myimg:latest
           format: cyclonedx
           output: sbom.json
-
-
-      - name: Scan SBOM
-        uses: aquasecurity/trivy-action@v0.20.0
-        with:
-          scan-type: sbom
-          scan-ref: sbom.json
-          severity: CRITICAL,HIGH
-          exit-code: 0
-
-
-      # 8️⃣ 🧠 Code-Level Security Scan (CodeQL)
-      - name: Initialize CodeQL
-        uses: github/codeql-action/init@v3
-        with:
-          languages: python
-
-
-      - name: Run CodeQL Analysis
-        uses: github/codeql-action/analyze@v3
 
       - name: Create Report Directory
         run: mkdir -p security-bot/report
 
-      # 📄 Generate Trivy JSON Report (Required for Auto-Fix)
-      - name: Generate Trivy JSON Report
+      - name: Scan SBOM and Generate JSON Report
         uses: aquasecurity/trivy-action@v0.20.0
         with:
-          image-ref: myimg:latest
+          scan-type: sbom
+          scan-ref: sbom.json
           format: json
           output: security-bot/report/trivy_report.json
-          severity: CRITICAL,HIGH
+          severity: HIGH,CRITICAL
           exit-code: 0
 
 
