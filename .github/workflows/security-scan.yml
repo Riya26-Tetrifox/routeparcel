@@ -57,6 +57,9 @@ jobs:
           output: security-bot/report/trivy_report.json
           severity: HIGH,CRITICAL
           exit-code: 0
+          
+      - name: Install security-bot dependencies
+        run: pip install -r security-bot/requirements.txt
 
 
       - name: Run Auto Remediation
