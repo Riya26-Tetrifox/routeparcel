@@ -20,29 +20,29 @@ def main():
         return "NO_VULNERABILITIES"
 
     print("VULNERABILITIES_DETECTED")  # Workflow will look for this string
-    message = "Subject: Security Alert 🚨\n\n"
-    message += "HIGH / CRITICAL Vulnerabilities Detected:\n\n"
+    # message = "Subject: Security Alert 🚨\n\n"
+    # message += "HIGH / CRITICAL Vulnerabilities Detected:\n\n"
 
     for vuln in vulns:
         # Apply the fix
         update_package(vuln["package"], vuln["fixed_version"])
 
-        message += (
-            f"Package: {vuln['package']}\n"
-            f"Installed Version: {vuln['current_version']}\n"
-            f"Fixed Version: {vuln['fixed_version']}\n"
-            f"CVE ID: {vuln['cve_id']}\n"
-            f"Severity: {vuln['severity']}\n"
-            "-----------------------------------\n"
-        )
+        # message += (
+        #     f"Package: {vuln['package']}\n"
+        #     f"Installed Version: {vuln['current_version']}\n"
+        #     f"Fixed Version: {vuln['fixed_version']}\n"
+        #     f"CVE ID: {vuln['cve_id']}\n"
+        #     f"Severity: {vuln['severity']}\n"
+        #     "-----------------------------------\n"
+        # )
 
-    print("Vulnerabilities List:", json.dumps(vulns, indent=2))
+    # print("Vulnerabilities List:", json.dumps(vulns, indent=2))
 
     # Send email alert
-    try:
-        send_email(message)
-    except Exception as e:
-        print(f"Warning: Failed to send email: {e}")
+    # try:
+    #     send_email(message)
+    # except Exception as e:
+    #     print(f"Warning: Failed to send email: {e}")
 
     # Instead of exiting 1, just return string so Bash can capture it
     return "VULNERABILITIES_FOUND"
