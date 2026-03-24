@@ -58,6 +58,9 @@ jobs:
           severity: HIGH,CRITICAL
           exit-code: 0
 
+      - name: Delete SBOM file
+        run: rm -f sbom.json
+
       - name: Install security-bot dependencies
         run: pip install -r security-bot/requirements.txt
 

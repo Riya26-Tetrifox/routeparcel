@@ -1,6 +1,5 @@
 from parser import get_vulnerable_packages
 from updater import update_package
-from notifier import send_email
 import sys
 import json
 
