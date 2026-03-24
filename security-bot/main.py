@@ -17,7 +17,7 @@ def main():
     for vuln in vulns:
         update_package(vuln["package"], vuln["fixed_version"])
     return "VULNERABILITIES_FOUND"
-
+# nkeskf
 
 if __name__ == "__main__":
     main()
