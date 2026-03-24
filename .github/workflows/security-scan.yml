@@ -61,20 +61,9 @@ jobs:
       - name: Delete SBOM file
         run: rm -f sbom.json
 
-      - name: Install security-bot dependencies
-        run: pip install -r security-bot/requirements.txt
-
-
-      - name: Run Auto Remediation
+      - name: Run Security Bot Action
         id: auto_fix
-        run: |
-          OUTPUT=$(python3 security-bot/main.py)
-          echo "$OUTPUT"
-          if [[ "$OUTPUT" == *"VULNERABILITIES_FOUND"* ]]; then
-            echo "fix_needed=true" >> $GITHUB_OUTPUT
-          else
-            echo "fix_needed=false" >> $GITHUB_OUTPUT
-          fi
+        uses: Riya26-Tetrifox/security-bot-action@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
          
