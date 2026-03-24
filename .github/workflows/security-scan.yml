@@ -80,7 +80,6 @@ jobs:
           exit-code: 1
           
       
-      # 1️⃣ Create Pull Request for Fix
       - name: Create Pull Request
         if: steps.auto_fix.outputs.fix_needed == 'true'
         uses: peter-evans/create-pull-request@v6
@@ -90,6 +89,9 @@ jobs:
           title: "Security Auto Remediation"
           body: |
             This PR automatically fixes HIGH/CRITICAL vulnerabilities detected by Trivy.
+          add-paths: |
+            requirements.txt
+
 
 
 
