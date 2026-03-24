@@ -66,6 +66,11 @@ jobs:
         uses: Riya26-Tetrifox/security-bot-action@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        
+      - name: Debug Output
+        run: |
+          echo "Fix needed output is: ${{ steps.auto_fix.outputs.fix_needed }}"
+
          
       - name: Rebuild Docker Image After Fix
         if: steps.auto_fix.outputs.fix_needed == 'true'
