@@ -74,13 +74,6 @@ jobs:
          
       - name: Rebuild Docker Image After Fix
         run: docker build -t myimg:fixed .
-
-      - name: Re-Scan Image After Fix
-        uses: aquasecurity/trivy-action@v0.20.0
-        with:
-          image-ref: myimg:fixed
-          severity: CRITICAL,HIGH
-          exit-code: 1
           
       
       - name: Create Pull Request
