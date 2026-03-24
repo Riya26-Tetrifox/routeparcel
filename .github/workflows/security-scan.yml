@@ -79,16 +79,7 @@ jobs:
           severity: CRITICAL,HIGH
           exit-code: 1
           
-      - name: Commit changes
-        if: steps.auto_fix.outputs.fix_needed == 'true'
-        run: |
-          git config --global user.name "github-actions"
-          git config --global user.email "actions@github.com"
-
-          git add requirements.txt
-          git commit -m "🔐 Auto-fix vulnerabilities" || echo "No changes"
-
-
+      
       # 1️⃣ Create Pull Request for Fix
       - name: Create Pull Request
         if: steps.auto_fix.outputs.fix_needed == 'true'
