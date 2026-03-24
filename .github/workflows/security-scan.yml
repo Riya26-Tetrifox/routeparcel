@@ -73,11 +73,9 @@ jobs:
 
          
       - name: Rebuild Docker Image After Fix
-        if: steps.auto_fix.outputs.fix_needed == 'true'
         run: docker build -t myimg:fixed .
 
       - name: Re-Scan Image After Fix
-        if: steps.auto_fix.outputs.fix_needed == 'true'
         uses: aquasecurity/trivy-action@v0.20.0
         with:
           image-ref: myimg:fixed
