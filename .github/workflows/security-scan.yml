@@ -39,7 +39,7 @@ jobs:
       
           # 6️⃣ 📦 Generate SBOM (Software Bill of Materials)
       - name: Generate SBOM
-        uses: aquasecurity/trivy-action@v0.20.0
+        uses: aquasecurity/trivy-action@0.35.0
         with:
           image-ref: myimg:latest
           format: cyclonedx
@@ -49,7 +49,7 @@ jobs:
         run: mkdir -p security-bot/report
 
       - name: Scan SBOM and Generate JSON Report
-        uses: aquasecurity/trivy-action@v0.20.0
+        uses: aquasecurity/trivy-action@0.35.0
         with:
           scan-type: sbom
           scan-ref: sbom.json
