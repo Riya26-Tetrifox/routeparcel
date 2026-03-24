@@ -20,5 +20,6 @@ def main():
 # nkeskf
 
 if __name__ == "__main__":
-    main()
+    result = main()
+    print(result)
     sys.exit(0)
