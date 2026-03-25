@@ -75,19 +75,24 @@ jobs:
       - name: Rebuild Docker Image After Fix
         run: docker build -t myimg:fixed .
           
+      - name: Create PR with updated metrics
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add DORA.md dora-metrics.json dora-history.json
+          git diff --staged --quiet && echo "No changes" && exit 0
+          branch="chore/dora-metrics-$(date +%Y%m%d)"
+          git checkout -b "$branch"
+          git commit -m "docs: update DORA metrics dashboard"
+          git push -u origin "$branch"
+          gh pr create \
+            --title "Update DORA metrics dashboard" \
+            --body "Automated weekly DORA metrics update." \
+            --label "automated"
+          gh pr merge "$branch" --auto --squash
       
-      - name: Create Pull Request
-        if: steps.auto_fix.outputs.fix_needed == 'true'
-        uses: peter-evans/create-pull-request@v6
-        with:
-          commit-message: "🔐 Auto-fix HIGH/CRITICAL vulnerabilities"
-          branch: security/auto-fix
-          title: "Security Auto Remediation"
-          body: |
-            This PR automatically fixes HIGH/CRITICAL vulnerabilities detected by Trivy.
-          add-paths: |
-            requirements.txt
-
 
 
 
