@@ -7,7 +7,7 @@ export default function Taable({ taable,setTaable }) {
   const handleApprove =async (id)=>{
     try{
       const response =await fetch(
-       ` http://127.0.0.1:8000/apply-insurance/${id}`,
+       `http://127.0.0.1:8000/apply-insurance/${id}`,
        {
         method:"POST",
        }
