@@ -90,7 +90,8 @@ jobs:
 
           git diff --staged --quiet && echo "No changes" && exit 0
 
-          branch="chore/dora-metrics-$(date +%Y%m%d)"
+          branch="chore/dora-metrics-$(date +%Y%m%d-%H%M%S)"
+
           git checkout -b "$branch"
 
           git commit -m "docs: update DORA metrics dashboard"
