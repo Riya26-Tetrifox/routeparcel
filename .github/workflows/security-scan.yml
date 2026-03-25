@@ -99,7 +99,7 @@ jobs:
           gh pr create \
             --title "Update DORA metrics dashboard" \
             --body "Automated weekly DORA metrics update." \
-            --label "automated"
+           
 
           gh pr merge "$branch" --auto --squash
         env:
