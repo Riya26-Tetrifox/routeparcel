@@ -74,19 +74,13 @@ jobs:
       - name: Rebuild Docker Image After Fix
         run: docker build -t myimg:fixed .
         
- 
-      - name: Generate DORA Metrics
-        run: |
-          echo "# DORA Metrics Dashboard" > DORA.md
-          echo '{"deployment_frequency": "weekly"}' > dora-metrics.json
-          echo '[]' > dora-history.json
 
       - name: Create PR for DORA Metrics
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          git add security-bot/requirements.txt
+          git add requirements.txt
           git diff --staged --quiet && echo "No changes" && exit 0
 
           branch="chore/dora-metrics-$(date +%Y%m%d-%H%M%S)"
