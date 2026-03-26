@@ -73,7 +73,8 @@ jobs:
    
       - name: Rebuild Docker Image After Fix
         run: docker build -t myimg:fixed .
-         
+        
+ 
       - name: Generate DORA Metrics
         run: |
           echo "# DORA Metrics Dashboard" > DORA.md
@@ -99,7 +100,6 @@ jobs:
           gh pr create \
             --title "Update DORA metrics dashboard" \
             --body "Automated weekly DORA metrics update." \
-        add-paths: |
-          DORA.md
-          dora-metrics.json
-          dora-history.json
+
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
