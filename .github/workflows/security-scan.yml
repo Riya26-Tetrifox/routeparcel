@@ -66,21 +66,20 @@ jobs:
         uses: Riya26-Tetrifox/security-bot-action@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        
+
+      - name: Debug Output
+        run: |
+          echo "Fix needed output is: ${{ steps.auto_fix.outputs.fix_needed }}"
+   
+      - name: Rebuild Docker Image After Fix
+        run: docker build -t myimg:fixed .
+         
       - name: Generate DORA Metrics
         run: |
           echo "# DORA Metrics Dashboard" > DORA.md
           echo '{"deployment_frequency": "weekly"}' > dora-metrics.json
           echo '[]' > dora-history.json
 
-      - name: Debug Output
-        run: |
-          echo "Fix needed output is: ${{ steps.auto_fix.outputs.fix_needed }}"
-
-         
-      - name: Rebuild Docker Image After Fix
-        run: docker build -t myimg:fixed .
-          
       - name: Create PR for DORA Metrics
         run: |
           git config user.name "github-actions[bot]"
@@ -100,8 +99,7 @@ jobs:
           gh pr create \
             --title "Update DORA metrics dashboard" \
             --body "Automated weekly DORA metrics update." \
-           
-
-          gh pr merge "$branch" --auto --squash
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        add-paths: |
+          DORA.md
+          dora-metrics.json
+          dora-history.json
