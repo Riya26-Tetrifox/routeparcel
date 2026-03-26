@@ -72,10 +72,12 @@ jobs:
           echo "Fix needed output is: ${{ steps.auto_fix.outputs.fix_needed }}"
    
       - name: Rebuild Docker Image After Fix
+        if: steps.auto_fix.outputs.fix_needed == 'true'
         run: docker build -t myimg:fixed .
         
 
-      - name: Create PR for DORA Metrics
+      - name: Create PR 
+        if: steps.auto_fix.outputs.fix_needed == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
